@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Shop — Home</title>
+
+  <!-- Snipcart CSS (v3) -->
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">My Shop</h1>
+      <nav>
+        <!-- Snipcart automatically binds this to open the cart -->
+        <button class="snipcart-checkout cart-btn">Cart</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Welcome — small shop demo</h2>
+      <p>Simple site + Snipcart. Click an item to add it to the cart.</p>
+    </section>
+
+    <section class="products">
+      <!-- Product 1 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/360x240?text=Product+1" alt="Product 1">
+        <h3>Handmade Mug</h3>
+        <p class="price">$18.00</p>
+        <p class="desc">A cozy mug for your coffee or tea.</p>
+        <button
+          class="snipcart-add-item buy-btn"
+          data-item-id="mug-001"
+          data-item-name="Handmade Mug"
+          data-item-price="18.00"
+          data-item-url="http://localhost:5500/index.html"
+          data-item-description="A cozy handmade ceramic mug.">
+          Add to cart
+        </button>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/360x240?text=Product+2" alt="Product 2">
+        <h3>Printed Tote</h3>
+        <p class="price">$12.00</p>
+        <p class="desc">Durable tote bag with cool print.</p>
+        <button
+          class="snipcart-add-item buy-btn"
+          data-item-id="tote-001"
+          data-item-name="Printed Tote"
+          data-item-price="12.00"
+          data-item-url="http://localhost:5500/index.html"
+          data-item-description="Durable tote bag with cool print.">
+          Add to cart
+        </button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> My Shop</p>
+    </div>
+  </footer>
+
+  <!-- IMPORTANT: Replace YOUR_PUBLIC_API_KEY below with your Snipcart Public API Key -->
+  <div hidden id="snipcart" data-api-key="MTQ5Y2YzMDktODU2MS00MmFlLWJhNjktM2QzZmFkMTVjZDU3NjM5MDQ0NDQ5NTQ3MTEyODgz"></div>
+  <script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js"></script>
+
+  <script>
+    // small nicety: set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
