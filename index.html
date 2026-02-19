@@ -1,82 +1,475 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>My Shop — Home</title>
-
-  <!-- Snipcart CSS (v3) -->
-  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.css" />
-
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nokdam - Premium Plant E-commerce</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Snipcart CSS -->
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Embla Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/embla-carousel@8.0.0/embla-carousel.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">My Shop</h1>
-      <nav>
-        <!-- Snipcart automatically binds this to open the cart -->
-        <button class="snipcart-checkout cart-btn">Cart</button>
-      </nav>
-    </div>
-  </header>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M7 10v2a5 5 0 0 0 10 0v-2"/><path d="m12 19 0 3"/></svg>
+                </div>
+                <h1>Nokdam</h1>
+            </a>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Welcome — small shop demo</h2>
-      <p>Simple site + Snipcart. Click an item to add it to the cart.</p>
+            <nav class="nav-desktop">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#care">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="snipcart-checkout" aria-label="Shopping Cart">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    <span class="cart-badge snipcart-items-count" style="display: none;">0</span>
+                </button>
+                <button id="orderTrackBtn" aria-label="Track Order">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+                </button>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#care">About</a>
+                <a href="#contact">Contact</a>
+                <button class="snipcart-checkout" style="background: none; border: none; color: white; text-align: left; padding: 0; cursor: pointer; display: flex; align-items: center; gap: 0.5rem;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                    Cart (<span class="snipcart-items-count">0</span>)
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Bring The Nature Close To You</h1>
+                    <p>Discover our carefully curated selection of premium plants that bring life and freshness to your home. Each plant comes with expert care guidance.</p>
+                    <a href="#products" class="cta-button">
+                        Shop Now
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div></div>
+            </div>
+
+            <div class="hero-features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M7 10v2a5 5 0 0 0 10 0v-2"/><path d="m12 19 0 3"/></svg>
+                    </div>
+                    <div>
+                        <h3>Growing With You</h3>
+                        <p>We're building this brand step by step, together with you.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+                    </div>
+                    <div>
+                        <h3>Direct From Creator</h3>
+                        <p>Designed, produced, and packed directly by the founder.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
+                    </div>
+                    <div>
+                        <h3>Quality Over Quantity</h3>
+                        <p>We choose thoughtful details over mass production.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="products">
-      <!-- Product 1 -->
-      <article class="product-card">
-        <img src="https://via.placeholder.com/360x240?text=Product+1" alt="Product 1">
-        <h3>Handmade Mug</h3>
-        <p class="price">$18.00</p>
-        <p class="desc">A cozy mug for your coffee or tea.</p>
-        <button
-          class="snipcart-add-item buy-btn"
-          data-item-id="mug-001"
-          data-item-name="Handmade Mug"
-          data-item-price="18.00"
-          data-item-url="https://icoirun.github.io/nokdam/"
-          data-item-description="A cozy handmade ceramic mug.">
-          Add to cart
-        </button>
-      </article>
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Products</h2>
+                <p>Browse our handpicked collection of beautiful plants perfect for any space</p>
+            </div>
 
-      <!-- Product 2 -->
-      <article class="product-card">
-        <img src="https://via.placeholder.com/360x240?text=Product+2" alt="Product 2">
-        <h3>Printed Tote</h3>
-        <p class="price">$12.00</p>
-        <p class="desc">Durable tote bag with cool print.</p>
-        <button
-          class="snipcart-add-item buy-btn"
-          data-item-id="tote-001"
-          data-item-name="Printed Tote"
-          data-item-price="12.00"
-          data-item-url="https://icoirun.github.io/nokdam/"
-          data-item-description="Durable tote bag with cool print.">
-          Add to cart
-        </button>
-      </article>
+            <div class="category-tabs" id="categoryTabs">
+                <button class="category-tab active" data-category="All">All</button>
+                <button class="category-tab" data-category="Plants">Plants</button>
+                <button class="category-tab" data-category="Accessories">Accessories</button>
+            </div>
+
+            <div class="filter-controls">
+                <button class="filter-toggle" id="filterToggle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg>
+                    <span id="filterToggleText">Hide Filters</span>
+                </button>
+                <div class="product-count" id="productCount">20 products found</div>
+            </div>
+
+            <div class="products-layout">
+                <aside class="filters-sidebar active" id="filtersSidebar">
+                    <div class="filter-box">
+                        <div class="filter-header">
+                            <h3>Filters</h3>
+                            <button class="clear-filters hidden" id="clearFilters">Clear All</button>
+                        </div>
+
+                        <div class="filter-group" id="plantTypeFilter">
+                            <button class="filter-group-header" onclick="toggleFilterGroup('plantType')">
+                                <span>Plant Type</span>
+                                <svg id="plantTypeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div class="filter-options" id="plantTypeOptions">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="Indoor" onchange="applyFilters()">
+                                    <span>Indoor</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="Outdoor" onchange="applyFilters()">
+                                    <span>Outdoor</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="Succulents" onchange="applyFilters()">
+                                    <span>Succulents</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="Flowering" onchange="applyFilters()">
+                                    <span>Flowering</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-group">
+                            <button class="filter-group-header" onclick="toggleFilterGroup('priceRange')">
+                                <span>Price Range</span>
+                                <svg id="priceRangeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                            </button>
+                            <div class="filter-options" id="priceRangeOptions">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="0-25" onchange="applyFilters()">
+                                    <span>Under $25</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="25-50" onchange="applyFilters()">
+                                    <span>$25 - $50</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="50-100" onchange="applyFilters()">
+                                    <span>$50 - $100</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="100-999999" onchange="applyFilters()">
+                                    <span>Over $100</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="active-filters hidden" id="activeFilters">
+                            <div class="active-filters-title">Active Filters</div>
+                            <div class="active-filter-tags" id="activeFilterTags"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <button class="mobile-filter-btn" id="mobileFilterBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></svg>
+                    Filters
+                </button>
+
+                <div class="mobile-filter-modal" id="mobileFilterModal">
+                    <div class="mobile-filter-content">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                            <h3 style="font-size: 1.25rem; font-weight: bold; color: var(--color-dark-green);">Filters</h3>
+                            <button id="closeMobileFilter" style="background: none; border: none; color: #9ca3af; cursor: pointer;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                            </button>
+                        </div>
+
+                        <div id="mobileFiltersContent"></div>
+
+                        <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                            <button id="mobileClearFilters" style="flex: 1; background: #f3f4f6; color: #4b5563; padding: 0.75rem 1.5rem; border-radius: 9999px; border: none; font-weight: 500; cursor: pointer;">Clear All</button>
+                            <button id="mobileApplyFilters" style="flex: 1; background: var(--color-coral); color: white; padding: 0.75rem 1.5rem; border-radius: 9999px; border: none; font-weight: 500; cursor: pointer;">Apply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products-grid" id="productsGrid"></div>
+            </div>
+
+            <div class="load-more-section hidden" id="loadMoreSection">
+                <button class="load-more-btn" id="loadMoreBtn">Load More Products</button>
+            </div>
+
+            <div class="load-more-section hidden" id="showLessSection">
+                <button class="load-more-btn" id="showLessBtn" style="background: #f3f4f6; color: #4b5563; border-color: #d1d5db;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 0.5rem;"><path d="m18 15-6-6-6 6"/></svg>
+                    Show Less
+                </button>
+            </div>
+
+            <div class="no-products hidden" id="noProducts">
+                <p>No products found matching your filters.</p>
+                <button onclick="clearAllFilters()" style="background: none; border: none; color: var(--color-coral); font-weight: 500; cursor: pointer;">Clear filters</button>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> My Shop</p>
+    <!-- Instagram/CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <img src="https://images.unsplash.com/photo-1684238373874-d88108f7d04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920" alt="Indoor plants">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="cta-container">
+            <div class="section-header">
+                <h2>Follow us on Instagram</h2>
+                <p>Join our community and get inspired by plant lovers around the world</p>
+            </div>
+
+            <div class="instagram-grid">
+                <a href="https://www.instagram.com/nokdam.monstera" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1617907332636-bb421c700835?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Instagram post">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/nokdam.monstera" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1653404809389-f370ea4310dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Instagram post">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/nokdam.monstera" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1654609678730-d241a2b2eb8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Instagram post">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/nokdam.monstera" target="_blank" rel="noopener noreferrer" class="instagram-item">
+                    <img src="https://images.unsplash.com/photo-1707289424481-b514b32f704e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Instagram post">
+                    <div class="instagram-overlay">
+                        <svg class="instagram-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </div>
+                </a>
+            </div>
+
+            <div class="follow-btn-wrapper">
+                <a href="https://www.instagram.com/nokdam.monstera" target="_blank" rel="noopener noreferrer" class="follow-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    Follow
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant Care Section -->
+    <section id="care" class="plant-care-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About</h2>
+                <p>Follow these simple guidelines to help your plants flourish and create a thriving indoor garden</p>
+            </div>
+
+            <div class="care-steps">
+                <div class="care-step">
+                    <div class="care-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    </div>
+                    <div class="care-number">01</div>
+                    <h3>Water Regularly</h3>
+                    <p>Keep your plants hydrated with the right amount of water. Each species has unique needs, so check the soil moisture before watering.</p>
+                </div>
+                <div class="care-step">
+                    <div class="care-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                    </div>
+                    <div class="care-number">02</div>
+                    <h3>Provide Light</h3>
+                    <p>Most plants need adequate sunlight to thrive. Place them near windows or use grow lights for indoor plants in low-light areas.</p>
+                </div>
+                <div class="care-step">
+                    <div class="care-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"/><path d="M9.6 4.6A2 2 0 1 1 11 8H2"/><path d="M12.6 19.4A2 2 0 1 0 14 16H2"/></svg>
+                    </div>
+                    <div class="care-number">03</div>
+                    <h3>Ensure Airflow</h3>
+                    <p>Good air circulation prevents diseases and promotes healthy growth. Avoid overcrowding and ensure proper ventilation.</p>
+                </div>
+            </div>
+
+            <div class="care-cta">
+                <div class="care-cta-image">
+                    <img src="https://images.unsplash.com/photo-1758273705712-857d29edbde1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Person caring for plants">
+                </div>
+                <div class="care-cta-content">
+                    <h3>Come with us now to grow your plant and make a better life</h3>
+                    <p>Join thousands of plant lovers who have transformed their spaces with our expert guidance and premium plant selection. Start your green journey today and experience the joy of nurturing life in your home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Trusted by thousands of plant lovers across the country</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-viewport">
+                    <div class="carousel-track" id="testimonialsTrack"></div>
+                </div>
+
+                <div class="carousel-nav">
+                    <button class="carousel-prev" id="testimonialPrev" aria-label="Previous">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-next" id="testimonialNext" aria-label="Next">
+                        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="carousel-dots" id="testimonialDots"></div>
+
+            <div class="mobile-carousel-nav">
+                <button id="testimonialPrevMobile" aria-label="Previous">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button id="testimonialNextMobile" aria-label="Next">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>Stay In The Loop With Specials Offers, Plant Parenting Tips & More</h2>
+            <p>Subscribe to our newsletter and receive expert plant care tips and exclusive deals</p>
+            
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="newsletter-form-inner">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address" required id="newsletterEmail">
+                    <button type="submit" class="newsletter-submit">
+                        Subscribe
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <div class="footer-brand-icon">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M7 10v2a5 5 0 0 0 10 0v-2"/><path d="m12 19 0 3"/></svg>
+                        </div>
+                        <h3>Nokdam</h3>
+                    </div>
+                    <p class="footer-desc">Bringing nature closer to you with premium quality plants and accessories. Transform your space into a green paradise.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#care">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#" id="footerFAQ">FAQs</a></li>
+                        <li><a href="#" id="footerShipping">Shipping</a></li>
+                        <li><a href="#" id="footerReturns">Returns</a></li>
+                        <li><a href="#" id="footerOrderTrack">Order Tracking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Nokdam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Panel -->
+    <div class="info-panel-backdrop" id="faqPanelBackdrop"></div>
+    <div class="info-panel" id="faqPanel">
+        <div class="order-panel-header">
+            <div class="order-panel-header-inner">
+                <div class="order-panel-title">
+                    <svg width="24" height="24" fill="none" stroke="#1E4620" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <button class="order-panel-close" id="faqPanelClose">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+        </div>
+        <div class="order-panel-content" id="faqContent"></div>
     </div>
-  </footer>
 
-  <!-- IMPORTANT: Replace YOUR_PUBLIC_API_KEY below with your Snipcart Public API Key -->
-  <div hidden id="snipcart" data-api-key="MTQ5Y2YzMDktODU2MS00MmFlLWJhNjktM2QzZmFkMTVjZDU3NjM5MDQ0NDQ5NTQ3MTEyODgz"></div>
-  <script async src="https://cdn.snipcart.com/themes/v3.3.1/default/snipcart.js"></script>
-  
-  <script>
-    // small nicety: set year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- Snipcart -->
+    <div id="snipcart" data-api-key="MTQ5Y2YzMDktODU2MS00MmFlLWJhNjktM2QzZmFkMTVjZDU3NjM5MDQ0NDQ5NTQ3MTEyODgz" data-config-modal-style="side" hidden></div>
+    <script src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
