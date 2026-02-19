@@ -1,0 +1,302 @@
+[
+  {
+    "id": "nokdam-plants-1",
+    "name": "Monstera Deliciosa",
+    "price": 45,
+    "url": "https://icoirun.github.io/nokdam/#product-1",
+    "description": "Beautiful tropical plant with iconic split leaves, perfect for brightening any indoor space",
+    "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Popular" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-2",
+    "name": "Snake Plant",
+    "price": 32,
+    "url": "https://icoirun.github.io/nokdam/#product-2",
+    "description": "Low-maintenance air-purifying plant ideal for beginners",
+    "image": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "New" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-3",
+    "name": "Fiddle Leaf Fig",
+    "price": 65,
+    "url": "https://icoirun.github.io/nokdam/#product-3",
+    "description": "Statement plant with large violin-shaped leaves",
+    "image": "https://images.unsplash.com/photo-1614594895304-fe7116ac3b2b?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Popular" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-4",
+    "name": "Pothos",
+    "price": 28,
+    "url": "https://icoirun.github.io/nokdam/#product-4",
+    "description": "Easy-care trailing plant perfect for hanging baskets",
+    "image": "https://images.unsplash.com/photo-1632207691143-643e2bc7f86a?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-5",
+    "name": "Peace Lily",
+    "price": 38,
+    "url": "https://icoirun.github.io/nokdam/#product-5",
+    "description": "Elegant flowering plant that thrives in low light",
+    "image": "https://images.unsplash.com/photo-1593691509543-c55fb32d8de5?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-6",
+    "name": "Rubber Plant",
+    "price": 42,
+    "url": "https://icoirun.github.io/nokdam/#product-6",
+    "description": "Bold glossy leaves bring a modern touch to any room",
+    "image": "https://images.unsplash.com/photo-1614594748992-1d039c021db0?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-7",
+    "name": "Lavender",
+    "price": 22,
+    "url": "https://icoirun.github.io/nokdam/#product-7",
+    "description": "Fragrant herb perfect for gardens and outdoor spaces",
+    "image": "https://images.unsplash.com/photo-1595419828906-ff0c9736dd58?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Outdoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-8",
+    "name": "Bamboo Palm",
+    "price": 55,
+    "url": "https://icoirun.github.io/nokdam/#product-8",
+    "description": "Tropical palm that adds natural elegance to your home",
+    "image": "https://images.unsplash.com/photo-1608652840654-5451f8e8b5ea?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-9",
+    "name": "Succulent Mix",
+    "price": 18,
+    "url": "https://icoirun.github.io/nokdam/#product-9",
+    "description": "Collection of colorful drought-tolerant succulents",
+    "image": "https://images.unsplash.com/photo-1459156212016-c812468e2115?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Succulents" },
+      { "name": "Tag", "value": "New" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-10",
+    "name": "Aloe Vera",
+    "price": 24,
+    "url": "https://icoirun.github.io/nokdam/#product-10",
+    "description": "Medicinal plant with soothing gel-filled leaves",
+    "image": "https://images.unsplash.com/photo-1596492809116-1c0e20d26c8a?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Succulents" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-11",
+    "name": "Jade Plant",
+    "price": 30,
+    "url": "https://icoirun.github.io/nokdam/#product-11",
+    "description": "Lucky plant with thick jade-green leaves",
+    "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Succulents" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-12",
+    "name": "Orchid",
+    "price": 48,
+    "url": "https://icoirun.github.io/nokdam/#product-12",
+    "description": "Elegant exotic flowering plant",
+    "image": "https://images.unsplash.com/photo-1594668578674-5f5fadee1b4c?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Flowering" },
+      { "name": "Tag", "value": "Popular" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-13",
+    "name": "Cactus Collection",
+    "price": 35,
+    "url": "https://icoirun.github.io/nokdam/#product-13",
+    "description": "Assorted desert cacti collection",
+    "image": "https://images.unsplash.com/photo-1509223197845-458d87a8b8c3?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Succulents" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-14",
+    "name": "Bird of Paradise",
+    "price": 78,
+    "url": "https://icoirun.github.io/nokdam/#product-14",
+    "description": "Dramatic tropical plant with large banana-like leaves",
+    "image": "https://images.unsplash.com/photo-1616781710094-567a3c0d8b08?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-15",
+    "name": "String of Pearls",
+    "price": 26,
+    "url": "https://icoirun.github.io/nokdam/#product-15",
+    "description": "Unique trailing succulent with pearl-shaped leaves",
+    "image": "https://images.unsplash.com/photo-1614594737681-aae1c41f562e?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Succulents" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-plants-16",
+    "name": "ZZ Plant",
+    "price": 40,
+    "url": "https://icoirun.github.io/nokdam/#product-16",
+    "description": "Nearly indestructible plant with glossy foliage",
+    "image": "https://images.unsplash.com/photo-1632207691143-643e2bc7f86a?w=800&q=80",
+    "categories": ["Plants"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Indoor" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 500,
+    "dimensions": { "length": 20, "width": 20, "height": 30 }
+  },
+  {
+    "id": "nokdam-accessories-17",
+    "name": "Ceramic Pot Set",
+    "price": 45,
+    "url": "https://icoirun.github.io/nokdam/#product-17",
+    "description": "Beautiful set of handcrafted ceramic planters",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&q=80",
+    "categories": ["Accessories"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Accessories" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 800,
+    "dimensions": { "length": 25, "width": 25, "height": 15 }
+  },
+  {
+    "id": "nokdam-accessories-18",
+    "name": "Watering Can",
+    "price": 22,
+    "url": "https://icoirun.github.io/nokdam/#product-18",
+    "description": "Elegant copper watering can for your plants",
+    "image": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&q=80",
+    "categories": ["Accessories"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Accessories" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 400,
+    "dimensions": { "length": 30, "width": 15, "height": 25 }
+  },
+  {
+    "id": "nokdam-accessories-19",
+    "name": "Plant Food",
+    "price": 15,
+    "url": "https://icoirun.github.io/nokdam/#product-19",
+    "description": "Organic nutrient-rich plant fertilizer",
+    "image": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=800&q=80",
+    "categories": ["Accessories"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Accessories" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 200,
+    "dimensions": { "length": 10, "width": 10, "height": 15 }
+  },
+  {
+    "id": "nokdam-accessories-20",
+    "name": "Pruning Shears",
+    "price": 18,
+    "url": "https://icoirun.github.io/nokdam/#product-20",
+    "description": "Professional-grade stainless steel pruning shears",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+    "categories": ["Accessories"],
+    "customFields": [
+      { "name": "Plant Type", "value": "Accessories" },
+      { "name": "Tag", "value": "Standard" }
+    ],
+    "weight": 150,
+    "dimensions": { "length": 20, "width": 8, "height": 2 }
+  }
+]
